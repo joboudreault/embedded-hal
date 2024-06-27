@@ -14,7 +14,7 @@
 
 // needed to prevent defmt macros from breaking, since they emit code that does `defmt::blahblah`.
 #[cfg(feature = "defmt-03")]
-use defmt_03 as defmt;
+use defmt as defmt;
 
 pub mod i2c;
 pub mod spi;
